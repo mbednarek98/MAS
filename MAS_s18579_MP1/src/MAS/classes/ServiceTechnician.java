@@ -1,5 +1,6 @@
 package MAS.classes;
 
+import MAS.restrictions.Condition;
 import MAS.restrictions.Title;
 
 import java.io.IOException;
@@ -131,6 +132,14 @@ public class ServiceTechnician implements Serializable {   // Serwisant
 
     // -----------------
     // -- Metody klasy --
+    /**
+     * zmienStatusSprzetu(SerwisSprzetu, stan)
+     *
+     * @param deviceService  klasa SerwisSprzetu do ktorego chcemy sie odwolac
+     * @param condition stan sprzetu podczas serwisu
+     * TODO: dokonczyc klase (zmienStatusSprzetu(SerwisSprzetu, stan)) -- brak asocjacji miedzy klasami)
+     */
+    public void changeConditionDeviceService(DeviceService deviceService, Condition condition){ }
     /**
      * zdobadzWynagrodzenieBrutto()     -- Metoda atrybuty pochodnego --
      *
