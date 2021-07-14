@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <property name="connection.driver_class">org.h2.Driver</property>
+        <property name="connection.url">jdbc:h2:~/db-vet.h2</property>
+        <property name="connection.username">vet</property>
+        <property name="connection.password">admin</property>
+        <property name="connection.pool_size">1</property>
+        <property name="dialect">org.hibernate.dialect.H2Dialect</property>
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.generate_statistics">false</property>
+        <mapping class="sample.classes.Address"/>
+        <mapping class="sample.classes.Allocation"/>
+        <mapping class="sample.classes.Animal"/>
+        <mapping class="sample.classes.Client"/>
+        <mapping class="sample.classes.Medicine"/>
+        <mapping class="sample.classes.Payment"/>
+        <mapping class="sample.classes.Person"/>
+        <mapping class="sample.classes.Room"/>
+        <mapping class="sample.classes.Sickness"/>
+        <mapping class="sample.classes.Vet"/>
+        <mapping class="sample.classes.VetNurse"/>
+        <mapping class="sample.classes.Treatment"/>
+    </session-factory>
+</hibernate-configuration>
